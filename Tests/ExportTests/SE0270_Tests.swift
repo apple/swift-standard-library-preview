@@ -13,10 +13,13 @@ import SE0270_RangeSet
 import XCTest
 
 final class SE0270_Tests: XCTestCase {
-  func test_SE0270_RangeSet() {
+  
+  func test_RangeSet_method_contains() {
     let set = RangeSet<Double>(0.0..<100.0)
     XCTAssertTrue(set.contains(50.0))
-    
+  }
+  
+  func test_Collection_method_subranges() {
     let numbers = (0..<100).map { _ in Int.random(in: 1...100) }
     let filtered = numbers.filter { $0 >= 50 }
     let subset = numbers[numbers.subranges(where: { $0 >= 50 })]
