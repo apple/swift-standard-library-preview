@@ -11,6 +11,7 @@
 //===----------------------------------------------------------------------===//
 
 import PackageDescription
+import Foundation
 
 /// Details about an SE package.
 struct Export {
