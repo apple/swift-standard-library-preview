@@ -14,6 +14,9 @@ re-exporting each of the individual packages.
   Operations on noncontiguous subranges of collections, 
   such as `subranges(where:)` and `moveSubranges(_:to:)`, 
   as well as the supporting `RangeSet` type.
+- [**`SE0288_IsPower`**](https://github.com/apple/swift-se0288-is-power/):
+  Extends `BinaryInteger` with an `isPower(of:)` method that returns whether
+  an integer is a power of another.
 
 ## Usage
 
