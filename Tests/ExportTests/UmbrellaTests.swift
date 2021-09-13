@@ -31,4 +31,14 @@ final class UmbrellaTests: XCTestCase {
       StandardLibraryPreview.RangeSet<Int>.self
         == SE0270_RangeSet.RangeSet<Int>.self)
   }
+
+  func test_SE02288_IsPower() {
+    XCTAssertTrue(1024.isPower(of: 2))
+    XCTAssertTrue(6561.isPower(of: 3))
+    XCTAssertTrue(1000.isPower(of: 10))
+
+    XCTAssertFalse(1000.isPower(of: 2))
+    XCTAssertFalse(1024.isPower(of: 3))
+    XCTAssertFalse(6561.isPower(of: 10))
+  }
 }

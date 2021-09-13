@@ -12,3 +12,4 @@
 // Export the included libraries in order of acceptance here:
 
 @_exported import SE0270_RangeSet
+@_exported import SE0288_IsPower
