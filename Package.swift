@@ -36,7 +36,7 @@ struct Export {
 /// The list of SE packages to re-export.
 let exports = [
   Export(package: "swift-se0270-range-set", requirement: .upToNextMajor(from: "1.0.0")),
-  Export(package: "swift-se0288-is-power", requirement: .upToNextMajor(from: "1.0.0")),
+  Export(package: "swift-se0288-is-power", requirement: .upToNextMajor(from: "2.0.0")),
 ]
 
 /// The `StandardLibraryPreview` package definition.
